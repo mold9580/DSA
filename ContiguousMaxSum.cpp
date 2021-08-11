@@ -3,7 +3,7 @@
 using namespace std;
 int MaxSum(vector<int> &v)
 {
-    int maxsum=INT_MIN;
+    int maxsum=0;
     int currsum=0;
     for(int i=0;i<v.size();i++)
     {
