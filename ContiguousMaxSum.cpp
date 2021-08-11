@@ -8,13 +8,10 @@ int MaxSum(vector<int> &v)
     for(int i=0;i<v.size();i++)
     {
         currsum+=v[i];
+        maxsum=max(currsum,maxsum);
         if(currsum<0)
         {
             currsum=0;
-        }
-        else
-        {
-            maxsum=max(currsum,maxsum);
         }
     }
     return maxsum;
