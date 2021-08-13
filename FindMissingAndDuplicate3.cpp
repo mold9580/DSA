@@ -7,7 +7,7 @@ int * ArrayUpdate(int arr[],int n)
     for(int i=0;i<n;i++)
     {
         if(arr[abs(arr[i])-1]<0) arr1[0]=abs(arr[i]);
-        else arr[arr[i]-1]=-arr[arr[i]-1];
+        else arr[abs(arr[i])-1]=-arr[abs(arr[i])-1];
     }
     for(int i=0;i<n;i++)
     {
