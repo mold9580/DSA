@@ -13,6 +13,7 @@ bool subArrayExists(int arr[], int n)
     m[0]=0;
     int arr1[n];
     arr1[0]=arr[0];
+    if(arr[0]==0) return true; //Check for the corner case if the first element is zero or not
     for(int i=1;i<n;i++)
     {
         arr1[i]=arr[i]+arr1[i-1];
