@@ -4,6 +4,12 @@ using namespace std;
 
 void factorial(vector<int> &v, int n)
 {
+    //use vector to store single digit of result
+    //push carry's digit in the last accordingly
+
+
+    //Here we have viewed the numbers in vector in reverse mannner just to reduce the time complexity
+    //if we will not reverse Push_front operation will take O(n) while Push_back takes O(1)
     v.push_back(1);
     for(int i=2;i<=n;i++)
     {
@@ -20,6 +26,7 @@ void factorial(vector<int> &v, int n)
             carry/=10;
         }
     }
+    //Reverse the vector to print the output in regular manner
     reverse(v.begin(),v.end());
 }
 
