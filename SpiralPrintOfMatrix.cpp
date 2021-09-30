@@ -22,13 +22,13 @@ int main()
         for(int i=sr;i<=er;i++) cout<<arr[i][ec]<<" ";
         ec--;
         
-        if(sr<er)
+        if(sc<ec)
         {
             for(int i=ec;i>=sc;i--) cout<<arr[er][i]<<" ";
             er--;
         }
         
-        if(sc<ec)
+        if(sr<er)
         {
             for(int i=er;i>=sr;i--) cout<<arr[i][sc]<<" ";
             sc++;
