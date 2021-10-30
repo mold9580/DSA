@@ -15,6 +15,13 @@ vector<string> split(const string &,const string);
  */
 
 
+
+/*
+It is imposssible to make it palindrome if we start iterating from the middle of array
+start two pointers from ends of array and check whether the elements are equal or not, If equal forward the pointers inwards the array
+and try to make the pointers elemet equal by addint to smaller element untill we reach i==j
+*/
+
 int merge(vector<int> arr) {
     int n=arr.size();
     if(n<=1) return 0;
