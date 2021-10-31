@@ -22,6 +22,8 @@ public:
 	        else
 	        {
 	            ans=max(ans,curr_ans);
+                //in the contraction phase i will point to zero or one step ahead from the end of the array
+                //To overcome the condition where (curr_sum=arr[i])/arr[i] that will lead to ans=1, terminate the j pointer 2 step early to i.
 	            while(j<i-1)
 	            {
 	                curr_ans/=arr[j++];
