@@ -7,23 +7,17 @@ using namespace std;
 class Solution{
 public:
 	void merge(int arr1[], int arr2[], int n, int m) {
-	  int i=0,temp=0;
-	  while(i<n)
+	  int temp;
+	  for(int i=0;i<n;i++)
 	  {
-	      if(arr1[i]<=arr2[0]) i++;
+	      if(arr1[i]<arr2[0]) ;
 	      else
 	      {
-	          temp=arr1[n-1];
-	          for(int k=n-1;k>i;k--) arr1[k]=arr1[k-1];
+	          temp=arr1[i];
 	          arr1[i]=arr2[0];
 	          int j=1;
-	          for(; arr2[j]<temp && j<m ;j++)
-	          {
-	              arr2[j-1]=arr2[j];
-	          }
+	          while(j<m && arr2[j]<temp) {arr2[j-1]=arr2[j],j++;};
 	          arr2[j-1]=temp;
-	          i++;
-	          
 	      }
 	  }
 	}
