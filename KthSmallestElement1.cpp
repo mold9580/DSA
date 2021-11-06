@@ -2,7 +2,7 @@
 using namespace std;
 
 
-//Results in TLE in solution submission in GFG practice
+//Results in TLE in solution submission at GFG practice
 
 
 
