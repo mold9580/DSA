@@ -7,7 +7,7 @@ class Solution
     { 
         for(int j=0;j<n;j++)
         {
-            //reverse all the colums
+            //reverse all the columns 
             for(int i=0;i<n/2;i++) swap(matrix[i][j],matrix[n-1-i][j]);
         }
         for(int i=0;i<n;i++)
