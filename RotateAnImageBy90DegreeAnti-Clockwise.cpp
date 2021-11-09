@@ -3,7 +3,7 @@ using namespace std;
 class Solution
 {   
     public:
-    //Function to rotate matrix anticlockwise by 90 degrees.
+    //Function to rotate matrix anticlockwise by 90 degree.
     void rotateby90(vector<vector<int> >& matrix, int n) 
     { 
         for(int i=0;i<n;i++)
